@@ -1,8 +1,11 @@
+body {
+  background-color: black;
+}
+
 main {
   display: grid;
-  gap: 1rem;
   grid-template-columns: 1fr 5fr;
-  grid-template-rows: 1fr 100fr;
+  grid-template-rows: 1fr 20fr;
   background-color: black;
 }
 
@@ -138,22 +141,89 @@ main {
   font-size: 1.4rem;
   grid-column-start: 5;
   grid-column: span 2;
+  height: 3rem;
+  width: 3rem;
 }
 
 .profile-text {
   color: aliceblue;
   padding-top: 0.2rem;
   grid-column-start: 2;
-  padding-left: 0.5rem;
-  padding-top: 0.5rem;
+  padding-left: 0.4rem;
+  padding-top: 0.4rem;
 }
 
 /* main content */
 .main-content {
   width: 100%;
   height: 100%;
-  background-color: rgb(151, 151, 207);
+  background-color: rgb(88, 88, 111);
   grid-column-start: 2;
   grid-row-start: 2;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: 2fr 1fr 1fr 1fr 2fr;
+  row-gap: 3rem;
 }
 
+.Halloween-sale {
+  width: 100%;
+  border-radius: 2rem;
+}
+
+.right-bar-sale {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* .game-sale-1-img {
+  width: 50%;
+  height: auto;
+} */
+
+.right-bar-sale img {
+  width: 5rem;
+  height: 6rem;
+  margin-left: 1rem;
+  border-radius: 1rem;
+}
+
+.right-bar-sale a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+/* div-game-sale */
+.div-game-sale-1 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+.div-game-sale-2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+  align-items: center;
+}
+.div-game-sale-3 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+  align-items: center;
+}
+.div-game-sale-4 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+  align-items: center;
+}
+.div-game-sale-5 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+  align-items: center;
+}
