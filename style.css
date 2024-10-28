@@ -1,12 +1,12 @@
 body {
-  background-color: black;
+  background-color: rgb(11, 126, 61);
 }
 
 main {
   display: grid;
   grid-template-columns: 1fr 5fr;
-  grid-template-rows: 1fr 20fr;
-  background-color: black;
+  grid-template-rows: 0.5fr 20fr;
+  background-color: rgb(0, 172, 240);
 }
 
 .side-bar {
@@ -157,13 +157,14 @@ main {
 .main-content {
   width: 100%;
   height: 100%;
-  background-color: rgb(88, 88, 111);
+  background-color: rgb(0, 0, 0);
   grid-column-start: 2;
   grid-row-start: 2;
   display: grid;
   grid-template-columns: 4fr 1fr;
-  grid-template-rows: 2fr 1fr 1fr 1fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   row-gap: 3rem;
+  column-gap: 1rem;
 }
 
 .Halloween-sale {
@@ -178,14 +179,9 @@ main {
   gap: 1rem;
 }
 
-/* .game-sale-1-img {
-  width: 50%;
-  height: auto;
-} */
-
 .right-bar-sale img {
   width: 5rem;
-  height: 6rem;
+  height: 5rem;
   margin-left: 1rem;
   border-radius: 1rem;
 }
@@ -201,6 +197,9 @@ main {
   grid-template-columns: 1fr 2fr;
   gap: 1rem;
   align-items: center;
+  background-color: rgb(180, 180, 180);
+  border-radius: 1.3rem;
+  padding: 0.2rem;
 }
 
 .div-game-sale-2 {
@@ -208,22 +207,95 @@ main {
   grid-template-columns: 1fr 2fr;
   gap: 1rem;
   align-items: center;
+  background-color: rgb(180, 180, 180);
+  border-radius: 1.3rem;
+  padding: 0.2rem;
 }
 .div-game-sale-3 {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 1rem;
   align-items: center;
+  background-color: rgb(180, 180, 180);
+  border-radius: 1.3rem;
+  padding: 0.2rem;
 }
 .div-game-sale-4 {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 1rem;
   align-items: center;
+  background-color: rgb(180, 180, 180);
+  border-radius: 1.3rem;
+  padding: 0.2rem;
 }
 .div-game-sale-5 {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 1rem;
   align-items: center;
+  background-color: rgb(180, 180, 180);
+  border-radius: 1.3rem;
+  padding: 0.2rem;
+}
+
+/* discover grid */
+.discover-grid {
+  background-color: rgb(0, 0, 0);
+  grid-row-start: 2;
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr 5fr 0.5fr 0.5fr 0.5fr;
+  align-items: center;
+  color: aliceblue;
+  font-size: 1.35rem;
+  /* place-items: center; */
+}
+
+/* discover btn */
+.discover-btn {
+  grid-column-start: 5;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 0.1fr 1fr;
+}
+
+.discover-grid-btn-1 {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 2rem;
+  text-align: center;
+  background-color: darkgray;
+  color: gainsboro;
+}
+.discover-grid-btn-2 {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 2rem;
+  text-align: center;
+  background-color: darkgray;
+  color: gainsboro;
+}
+
+.discover-img {
+  width: auto;
+  height: 19rem;
+  border-radius: 1rem;
+}
+
+.base-game {
+  color: rgb(203, 203, 203);
+  font-size: 1rem;
+}
+
+.discover-game-name {
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+
+.discover-game-price {
+  font-weight: bolder;
+  font-size: 1rem;
+  font-family: "Times New Roman", Times, serif;
 }
