@@ -6,9 +6,10 @@ main {
   display: grid;
   grid-template-columns: 1fr 5fr;
   grid-template-rows: 0.5fr 20fr;
-  background-color: rgb(0, 172, 240);
+  background-color: black;
 }
 
+/* side-bar */
 .side-bar {
   height: 100vh;
   background-color: black;
@@ -17,6 +18,7 @@ main {
   position: sticky;
   top: 0;
 }
+
 .epic-logo-box {
   width: 100%;
   display: flex;
@@ -30,11 +32,19 @@ main {
 }
 
 .side-bar-links {
-  background-color: rgb(106, 106, 106);
   margin: 1rem;
   padding: 1rem;
   border-radius: 1rem;
   color: rgb(198, 198, 198);
+}
+
+.side-bar-links:hover {
+  background-color: rgb(106, 106, 106);
+  color: white;
+}
+
+.side-bar-links a:hover {
+  color: white;
 }
 
 .store,
@@ -56,6 +66,7 @@ main {
   position: sticky;
   top: 0;
   grid-column-start: 2;
+  z-index: 1;
 }
 
 .search-div {
@@ -85,14 +96,14 @@ main {
 }
 
 /* Search links */
-.Discover,
-.Browse,
-.News,
-.Wishlist,
-.Cart {
+.search-links {
   text-decoration: none;
   color: rgb(198, 198, 198);
   grid-row-start: 2;
+}
+
+.search-links:hover {
+  color: white;
 }
 
 .Wishlist {
@@ -119,7 +130,7 @@ main {
 }
 
 .friends-box {
-  background-color: gray;
+  background-color: rgb(87, 85, 85);
   color: azure;
   border-radius: 3rem;
   font-size: 1.3rem;
@@ -128,13 +139,17 @@ main {
   grid-template-columns: 1fr 3fr 1fr;
 }
 
+.friends-box:hover {
+  background-color: grey;
+}
+
 .friends-icon {
   grid-column-start: 2;
   padding-top: 0.5rem;
 }
 
 .profile {
-  background-color: gray;
+  background-color: rgb(87, 85, 85);
   border-radius: 3rem;
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
@@ -143,6 +158,10 @@ main {
   grid-column: span 2;
   height: 3rem;
   width: 3rem;
+}
+
+.profile:hover {
+  background-color: grey;
 }
 
 .profile-text {
@@ -162,13 +181,14 @@ main {
   grid-row-start: 2;
   display: grid;
   grid-template-columns: 4fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 0.5fr 0.7fr;
   row-gap: 3rem;
   column-gap: 1rem;
 }
 
 .Halloween-sale {
   width: 100%;
+  height: auto;
   border-radius: 2rem;
 }
 
@@ -176,14 +196,15 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
-  gap: 1rem;
+  padding: 1rem 1rem 0 0;
 }
 
 .right-bar-sale img {
-  width: 5rem;
+  width: 3.6rem;
   height: 5rem;
   margin-left: 1rem;
   border-radius: 1rem;
+  padding: 0.5rem;
 }
 
 .right-bar-sale a {
@@ -192,51 +213,21 @@ main {
 }
 
 /* div-game-sale */
-.div-game-sale-1 {
+.div-game-sale {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 1rem;
   align-items: center;
-  background-color: rgb(180, 180, 180);
   border-radius: 1.3rem;
   padding: 0.2rem;
 }
 
-.div-game-sale-2 {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 1rem;
-  align-items: center;
-  background-color: rgb(180, 180, 180);
-  border-radius: 1.3rem;
-  padding: 0.2rem;
+.div-game-sale:hover {
+  background-color: rgb(69, 68, 68);
 }
-.div-game-sale-3 {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 1rem;
-  align-items: center;
-  background-color: rgb(180, 180, 180);
-  border-radius: 1.3rem;
-  padding: 0.2rem;
-}
-.div-game-sale-4 {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 1rem;
-  align-items: center;
-  background-color: rgb(180, 180, 180);
-  border-radius: 1.3rem;
-  padding: 0.2rem;
-}
-.div-game-sale-5 {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 1rem;
-  align-items: center;
-  background-color: rgb(180, 180, 180);
-  border-radius: 1.3rem;
-  padding: 0.2rem;
+
+.div-game-sale a:hover {
+  color: white;
 }
 
 /* discover grid */
@@ -250,7 +241,15 @@ main {
   align-items: center;
   color: aliceblue;
   font-size: 1.35rem;
-  /* place-items: center; */
+}
+
+.discover-text-2 {
+  font-size: 2rem;
+}
+
+.discover-text-2:hover {
+  position: relative;
+  left: 0.4rem;
 }
 
 /* discover btn */
@@ -258,7 +257,8 @@ main {
   grid-column-start: 5;
   display: grid;
   align-items: center;
-  grid-template-columns: 0.1fr 1fr;
+  grid-template-columns: 1fr 0.1fr 0.1fr;
+  padding-right: 2rem;
 }
 
 .discover-grid-btn-1 {
@@ -268,6 +268,7 @@ main {
   text-align: center;
   background-color: darkgray;
   color: gainsboro;
+  grid-column: 2;
 }
 .discover-grid-btn-2 {
   width: 2.5rem;
@@ -278,10 +279,21 @@ main {
   color: gainsboro;
 }
 
-.discover-img {
-  width: auto;
-  height: 19rem;
+.discover-img-container {
+  background-color: white;
   border-radius: 1rem;
+  width: 14.6rem;
+}
+
+.discover-img {
+  width: 14.6rem;
+  height: 22rem;
+  border-radius: 1rem;
+}
+
+.discover-img:hover {
+  opacity: 0.8;
+  overflow: hidden;
 }
 
 .base-game {
@@ -298,4 +310,170 @@ main {
   font-weight: bolder;
   font-size: 1rem;
   font-family: "Times New Roman", Times, serif;
+}
+
+/* spotlight grid */
+.spotlight-grid {
+  background-color: rgb(0, 0, 0);
+  grid-row-start: 3;
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr 5fr 0.5fr 0.5fr 0.5fr;
+  align-items: center;
+  color: aliceblue;
+  font-size: 1.35rem;
+}
+
+.spotlight-text {
+  padding-left: 1rem;
+  font-size: 1.4rem;
+}
+
+.spotlight-text-2 {
+  font-size: 2rem;
+}
+
+/* spotlight btn */
+.spotlight-btn {
+  grid-column-start: 5;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 0.1fr 1fr;
+  grid-template-columns: 1fr 0.1fr 0.1fr;
+  padding-right: 2rem;
+}
+
+.spotlight-grid-btn-1 {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 2rem;
+  text-align: center;
+  background-color: darkgray;
+  color: gainsboro;
+  grid-column: 2;
+}
+.spotlight-grid-btn-2 {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 2rem;
+  text-align: center;
+  background-color: darkgray;
+  color: gainsboro;
+}
+
+.spotlight-img-container {
+  background-color: white;
+  border-radius: 1rem;
+  width: 15rem;
+}
+
+.spotlight-img {
+  width: 15rem;
+  height: 19rem;
+  border-radius: 1rem;
+}
+
+.spotlight-img:hover {
+  opacity: 0.8;
+  overflow: hidden;
+}
+
+.spotlight-game-name {
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+
+.spotlight-game-price {
+  font-weight: bolder;
+  font-size: 1rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* deals */
+.deals {
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1.5fr;
+  grid-template-rows: 3fr 0.1fr 1fr;
+  grid-column: span 2;
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+
+.deals-img-container {
+  width: 25rem;
+  height: 13rem;
+  border-radius: 1rem;
+  background-color: white;
+}
+
+.deals-img {
+  width: 25rem;
+  height: 13rem;
+  border-radius: 1rem;
+}
+
+.deals-img:hover {
+  opacity: 0.9;
+}
+
+.train:hover {
+  opacity: 0.8;
+}
+
+.deals-text {
+  font: 2em sans-serif;
+  font-weight: bolder;
+  color: aliceblue;
+}
+
+.deals-prices {
+  display: grid;
+  grid-template-columns: 0.1fr 0.1fr 1fr;
+  gap: 1rem;
+}
+
+.deals-prices p {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+
+.discount {
+  background-color: turquoise;
+  border-radius: 2rem;
+  text-align: center;
+  height: 1.7rem;
+  width: 4rem;
+}
+
+.first-price {
+  color: lightgray;
+  text-decoration: line-through;
+}
+
+.final-price {
+  color: aliceblue;
+}
+
+/* ads */
+.ads {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column: span 2;
+}
+
+.ads-img-container {
+  background-color: white;
+  width: 37.5rem;
+  height: 21rem;
+  border-radius: 2rem;
+}
+
+.ads img {
+  width: 37.5rem;
+  border-radius: 2rem;
+}
+
+.ads img:hover {
+  opacity: 0.9;
 }
