@@ -192,6 +192,12 @@ main {
   border-radius: 2rem;
 }
 
+.img2{
+  width: 100%;
+  height: auto;
+  border-radius: 2rem;
+}
+
 .right-bar-sale {
   display: grid;
   grid-template-columns: 1fr;
@@ -207,7 +213,7 @@ main {
   padding: 0.5rem;
 }
 
-.right-bar-sale a {
+.right-bar-sale p {
   text-decoration: none;
   color: aliceblue;
 }
